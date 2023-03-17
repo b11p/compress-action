@@ -12,5 +12,6 @@ do
 		echo "no $FILE_EXT files found"
 	else
 		echo $FILES | xargs /brotli -v --
+		gzip -k -n -9 -v $FILES
 	fi
 done
